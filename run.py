@@ -45,6 +45,15 @@ def save_credential(credential):
     '''
     credential.save_credential()
 
+def generate_password():
+    '''
+    Function that generates a password
+    '''
+    gen_pass = Credential.generate_password()
+    return gen_pass
+
+
+
 
 
 
