@@ -34,12 +34,12 @@ class Credential:
 if __name__ == '__main__':
     unittest.main()
 
-#     def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
-#         '''
-#         Function to generate an 8 character password
-#         '''
-#         gen_pass=''.join(random.choice(char) for _ in range(size))
-#         return gen_pass
+    def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
+        '''
+        Function to generate an 8 character password
+        '''
+        gen_pass=''.join(random.choice(char) for _ in range(size))
+        return gen_pass
 
 #     def delete_credential(self):
 
