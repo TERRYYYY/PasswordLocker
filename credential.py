@@ -1,5 +1,6 @@
 import string
 import random
+import pyperclip
 
 class Credential:
     """
@@ -74,4 +75,6 @@ if __name__ == '__main__':
         '''
         Method that returns the credential list
         '''
-    return cls.credential_list
+        return cls.credential_list
+
+    
