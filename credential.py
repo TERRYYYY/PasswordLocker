@@ -12,11 +12,11 @@ class Credential:
         self.acc_username = acc_username
         self.acc_password = acc_password
 
-#     def save_credential (self):
-#         '''
-#         save credential method saves credentials
-#         '''
-#         Credential.credential_list.append(self)
+    def save_credential (self):
+        '''
+        save credential method saves credentials
+        '''
+        Credential.credential_list.append(self)
 
 #     def tearDown(self):
 #         '''
