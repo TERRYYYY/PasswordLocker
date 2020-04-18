@@ -20,3 +20,8 @@ def del_user(user):
     Function to delete a user
     '''
     user.delete_user()
+def check_existing_users(name):
+    '''
+    Function that checks if a user exists with that name and return boolean
+    '''
+    return User.user_exist(name)
