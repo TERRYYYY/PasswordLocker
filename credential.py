@@ -59,11 +59,12 @@ if __name__ == '__main__':
                 return credential
 
     @classmethod
-    def credential_exist(cls,name):
+    def credential_exist(cls,acc_name):
         '''
         Method that checks if a credential exists from credential list
         '''
         for credential in cls.credential_list:
-            if credential.acc_username == name:
+            if credential.acc_username == acc_name:
                 return True
+
         return False

@@ -40,13 +40,15 @@ if __name__ == '__main__':
     
     @classmethod
     def user_exist(cls,name):
-        '''
-        Method that checks if a user exists from user list
-        '''
+
+
+
         for user in cls.user_list:
             if user.user_name == name:
                 return True
+
         return False
+    
 
 
 
