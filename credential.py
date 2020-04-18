@@ -18,21 +18,21 @@ class Credential:
         '''
         Credential.credential_list.append(self)
 
-#     def tearDown(self):
-#         '''
-#         tearDown method that does clean up after each test case has run
-#         '''
-#     def test_save_multiple_credential(self):
-#         '''
-#         test_save_multiple_user to check if we can save multiple users
-#         '''
-#         self.new_credential.save_credential()
-#         test_credential  = Credential("Account","acc_username","acc_password") #new contact
-#         test_credential.save_credential()
-#         self.assertEqual(len(Credential.credential_list),5)
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test case has run
+        '''
+    def test_save_multiple_credential(self):
+        '''
+        test_save_multiple_user to check if we can save multiple users
+        '''
+        self.new_credential.save_credential()
+        test_credential  = Credential("Account","acc_username","acc_password") #new contact
+        test_credential.save_credential()
+        self.assertEqual(len(Credential.credential_list),5)
 
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 #     def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
 #         '''

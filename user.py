@@ -14,21 +14,21 @@ class User:
         '''
         User.user_list.append(self)
 
-#     def tearDown(self):
-#         '''
-#         tearDown method that does clean up after each test case has run
-#         '''
-#     def test_save_multiple_user(self):
-#         '''
-#         test_save_multiple_user to check if we can save multiple users
-#         '''
-#         self.new_user.save_user()
-#         test_user = User("Test","password") #new contact
-#         test_user.save_user()
-#         self.assertEqual(len(User.user_list),5)
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test case has run
+        '''
+    def test_save_multiple_user(self):
+        '''
+        test_save_multiple_user to check if we can save multiple users
+        '''
+        self.new_user.save_user()
+        test_user = User("Test","password") #new contact
+        test_user.save_user()
+        self.assertEqual(len(User.user_list),5)
 
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 #     def delete_user(self):
 
