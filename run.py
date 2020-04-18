@@ -64,6 +64,14 @@ def find_credential(acc_name):
     '''
     return Credential.find_by_username(acc_name)
 
+def check_existing_credentials(acc_name):
+    '''
+    Function that checks if a credential exists
+    '''
+    return Credential.credential_user(acc_name)
+
+# def display_credential():
+
 
 
 
