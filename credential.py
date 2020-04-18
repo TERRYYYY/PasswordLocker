@@ -41,10 +41,10 @@ if __name__ == '__main__':
         gen_pass=''.join(random.choice(char) for _ in range(size))
         return gen_pass
 
-#     def delete_credential(self):
+    def delete_credential(self):
 
-#         '''
-#         delete_credential method deletes a saved credential from the credential_list
-#         '''
+        '''
+        delete_credential method deletes a saved credential from the credential_list
+        '''
 
-#         User.user_list.remove(self)
+        Credential.credential_list.remove(self)

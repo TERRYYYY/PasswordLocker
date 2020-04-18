@@ -30,13 +30,13 @@ class User:
 if __name__ == '__main__':
     unittest.main()
 
-#     def delete_user(self):
+    def delete_user(self):
 
-#         '''
-#         delete_user method deletes a saved user from the user_list
-#         '''
+        '''
+        delete_user method deletes a saved user from the user_list
+        '''
 
-#         User.user_list.remove(self)
+        User.user_list.remove(self)
 
 
 
