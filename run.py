@@ -52,6 +52,17 @@ def generate_password():
     gen_pass = Credential.generate_password()
     return gen_pass
 
+def del_credential(credential):
+    '''
+    Function to delete a credential
+    '''
+    credential.delete_credential()
+
+# def find_credential(acc_name):
+#     '''
+#     Function that finds a credential
+#     '''
+#     return Credential.find_by_username(acc_name)
 
 
 

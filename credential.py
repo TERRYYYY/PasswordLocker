@@ -51,12 +51,12 @@ if __name__ == '__main__':
         Credential.credential_list.remove(self)
     
     @classmethod
-    def find_by_username(cls,name):
+    def find_by_username(cls,acc_name):
         '''
         Method that takes in a  account username and returns an account that matches that account username
         '''
         for credential in cls.credential_list:
-            if credential.acc_username == name:
+            if credential.acc_username == acc_name:
                 return credential
 
     @classmethod
