@@ -70,7 +70,11 @@ def check_existing_credentials(acc_name):
     '''
     return Credential.credential_user(acc_name)
 
-# def display_credential():
+def display_credential():
+    '''
+    Function that returns all saved credentials
+    '''
+    return Credential.display_credential()
 
 
 
