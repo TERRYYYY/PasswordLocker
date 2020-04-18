@@ -58,11 +58,12 @@ def del_credential(credential):
     '''
     credential.delete_credential()
 
-# def find_credential(acc_name):
-#     '''
-#     Function that finds a credential
-#     '''
-#     return Credential.find_by_username(acc_name)
+def find_credential(acc_name):
+    '''
+    Function that finds a credential
+    '''
+    return Credential.find_by_username(acc_name)
+
 
 
 
