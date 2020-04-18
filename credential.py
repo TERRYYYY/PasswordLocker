@@ -68,3 +68,10 @@ if __name__ == '__main__':
                 return True
 
         return False
+
+    @classmethod
+    def display_credential(cls,acc_name):
+        '''
+        Method that returns the credential list
+        '''
+    return cls.credential_list
