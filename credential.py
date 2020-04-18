@@ -48,3 +48,22 @@ if __name__ == '__main__':
         '''
 
         Credential.credential_list.remove(self)
+    
+    @classmethod
+    def find_by_username(cls,name):
+        '''
+        Method that takes in a  account username and returns an account that matches that account username
+        '''
+        for credential in cls.credential_list:
+            if credential.acc_username == name:
+                return credential
+
+    @classmethod
+    def credential_exist(cls,name):
+        '''
+        Method that checks if a credential exists from credential list
+        '''
+        for credential in cls.credential_list:
+            if credential.acc_username == name:
+                return True
+        return False
