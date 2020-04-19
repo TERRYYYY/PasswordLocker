@@ -142,6 +142,7 @@ def main():
                 print('\n')
             
         elif short_code == '3':
+            print(' ')
             print("Create new credential")
             print("-"*100)
 
@@ -188,7 +189,7 @@ def main():
                 print(' ')
             
         elif short_code == '5':
-            print("Enter your account username")
+            print("Enter your account username:")
 
             search_accountusername = input()
             if check_existing_credentials (search_accountusername):
